@@ -20,3 +20,14 @@ donde "myenv" es el nombre del ambiente donde se quiere habilitar el ikernel.
 ### Github
 7. Desde https://git-scm.com/downloads descargar la última versión de Git.
 8. Instalar la extensión de Jupyter Lab para integrarse con Github (https://github.com/jupyterlab/jupyterlab-git): en una consola de powershell de conda, en el ambiente que corre Jupyter Lab, ejecutar pip install --upgrade jupyterlab jupyterlab-git
+
+### Paquetes Importantes
+9. Crear un enviroment con python 3.8 para instalar pycaret: en una ventana de powershell, ejecutar conda create --name <nombre_env> python=3.8. https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf
+10. Instalar el paquete pycaret. Sugiero instalar esto primero porque instala muchos paquetes que usa. Así no hay que instalarlos previamente.
+    * Activar el ambiente con python 3.8: en la ventana powershell, ejecutar: conda activate <nombre_env>
+    * Instalar pycaret con pip: pip install pycaret. https://pycaret.gitbook.io/docs/get-started/installation
+
+Paquetes que instala: pandas, scipy, seaborn, matplotlib, scikit-learn, wordcloud, spacy, nltk, pandas-profiling.
+11. Instalar otras librerías necesarias:
+    * Para integración con PI: pip install pythonnet. http://pythonnet.github.io/ https://pypi.org/project/pythonnet/ Python.NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR)
+    * Para acceso a SQL server: pyodbc. pip install pyodbc. https://github.com/mkleehammer/pyodbc/wiki
