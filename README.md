@@ -27,7 +27,7 @@ donde "myenv" es el nombre del ambiente donde se quiere habilitar el ikernel.
     * Activar el ambiente con python 3.8: en la ventana powershell, ejecutar: conda activate <nombre_env>
     * Instalar pycaret con pip: pip install pycaret. https://pycaret.gitbook.io/docs/get-started/installation
 
-Paquetes que instala: pandas, scipy, seaborn, matplotlib, scikit-learn, wordcloud, spacy, nltk, pandas-profiling.
+Paquetes que instala: pandas, scipy, seaborn, matplotlib, scikit-learn, wordcloud, spacy, nltk, pandas-profiling, ipykernel (para ejecutar jupyter lab).
 11. Instalar otras librerías necesarias:
     * Para integración con PI: pip install pythonnet. http://pythonnet.github.io/ https://pypi.org/project/pythonnet/ Python.NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR)
     * Para acceso a SQL server: pyodbc. pip install pyodbc. https://github.com/mkleehammer/pyodbc/wiki
