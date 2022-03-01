@@ -27,7 +27,22 @@ donde "myenv" es el nombre del ambiente donde se quiere habilitar el ikernel.
     * Activar el ambiente con python 3.8: en la ventana powershell, ejecutar: conda activate <nombre_env>
     * Instalar pycaret con pip: pip install pycaret. https://pycaret.gitbook.io/docs/get-started/installation
 
-Paquetes que instala: pandas, scipy, seaborn, matplotlib, scikit-learn, wordcloud, spacy, nltk, pandas-profiling.
+Paquetes que instala: pandas, scipy, seaborn, matplotlib, scikit-learn, wordcloud, spacy, nltk, pandas-profiling, ipykernel (para ejecutar jupyter lab).
 11. Instalar otras librerías necesarias:
     * Para integración con PI: pip install pythonnet. http://pythonnet.github.io/ https://pypi.org/project/pythonnet/ Python.NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR)
     * Para acceso a SQL server: pyodbc. pip install pyodbc. https://github.com/mkleehammer/pyodbc/wiki
+
+### Git Bash
+Working directory:
+$ pwd
+
+$ cd name-of-subfolder/sub-subfolder/
+
+HEAD as the "current branch"
+
+Consultar listado de los últimos commits (con "exit" se corta el listado)
+$ git log --pretty=format:"%h %cn %s"
+hash | usuario | descripción del commit --> sirve para cuando necesito hacer un rollback de un commit
+
+Hacer un rollback del arbol HASTA este commit. Se pierde todo hasta ese commit. Conviene hacer rollback del último commit y así.
+$ git reset --hard <hash del commit> --> 

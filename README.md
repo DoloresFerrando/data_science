@@ -31,3 +31,18 @@ Paquetes que instala: pandas, scipy, seaborn, matplotlib, scikit-learn, wordclou
 11. Instalar otras librerías necesarias:
     * Para integración con PI: pip install pythonnet. http://pythonnet.github.io/ https://pypi.org/project/pythonnet/ Python.NET is a package that gives Python programmers nearly seamless integration with the .NET Common Language Runtime (CLR)
     * Para acceso a SQL server: pyodbc. pip install pyodbc. https://github.com/mkleehammer/pyodbc/wiki
+
+### Git Bash
+Working directory:
+$ pwd
+
+$ cd name-of-subfolder/sub-subfolder/
+
+HEAD as the "current branch"
+
+Consultar listado de los últimos commits (con "exit" se corta el listado)
+$ git log --pretty=format:"%h %cn %s"
+hash | usuario | descripción del commit --> sirve para cuando necesito hacer un rollback de un commit
+
+Hacer un rollback del arbol HASTA este commit. Se pierde todo hasta ese commit. Conviene hacer rollback del último commit y así.
+$ git reset --hard <hash del commit> --> 
