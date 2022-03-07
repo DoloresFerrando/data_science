@@ -46,3 +46,5 @@ hash | usuario | descripción del commit --> sirve para cuando necesito hacer un
 
 Hacer un rollback del arbol HASTA este commit. Se pierde todo hasta ese commit. Conviene hacer rollback del último commit y así.
 $ git reset --hard <hash del commit> --> 
+
+https://geo-python-site.readthedocs.io/en/latest/lessons/L2/intro-to-GitHub.html
